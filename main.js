@@ -63,7 +63,7 @@ function playerMovem(input) {
 
 if (newRow < 0 || newRow >= Rs || newCol < 0 || newCol >= Cs) {
   console.log("Out of box!");
-  return;
+  process.exit();
 }
 
 const nextTile = board[newRow][newCol];
